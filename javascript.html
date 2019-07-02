@@ -1,0 +1,41 @@
+<html>
+
+  <head>
+    <title>Javascript</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500|Roboto+Condensed:400,400i|Roboto:400,700"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css" />
+    <style>
+      .console {
+        background: #333;
+        color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+        min-height: 350px;
+        padding: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="console" class="console"></div>
+    <script>
+
+      let consoleContainer = document.getElementById('console');
+      appendMessage = message => {
+        const breackLine = '<br/>';
+        const initLine = '> ';
+        consoleContainer.innerHTML = consoleContainer.innerHTML + initLine + message + breackLine
+      };
+
+      let _consoleLog = window.console.log;
+      window.console.log = function (message) {
+        _consoleLog.apply(console, arguments);
+        appendMessage(message);
+      }
+
+      console.log('consola iniciada');
+    </script>
+    <script src="assets/js/main.js"></script>
+  </body>
+
+</html>
