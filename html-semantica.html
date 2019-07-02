@@ -1,0 +1,67 @@
+<html>
+
+  <head>
+    <title>Html 5 Semantica</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500|Roboto+Condensed:400,400i|Roboto:400,700"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css" />
+  </head>
+
+  <body>
+    <header>
+      Cabecera Título de la aplicación. Será compartida por casi toda la apliación.
+    </header>
+    <article>
+      <h1>Este es el título principal de la página, solo puede haver uno ya que es un H1</h1>
+      <div>
+        <h2>Titulo de nivel 2, puede haver varios, uno por sección de contenido. Elementos de texto</h2>
+        <p>
+          En este párrafo, se explica el contenido del tag article, que no se repetirá en mas sitios de la aplicación.
+          En los parrafos ponemos textos en gran cantidad. Cuidado, soy un elemento de
+          bloke igual que un div
+        </p>
+        <span>Un span, es un elemento de texto inline, va muy bien para dar estilo o funcionalidad a textos.</span>
+        <p>
+          Para destacar elementos, si solo queremos que sean a nivel visual usaremos los <b> B </b> o <i>I</i> por
+          ejemplo. <br />
+          Para destacarlos a nivell de contenido usaremos los <strong>strong</strong>. A google lo molan.
+        </p>
+      </div>
+
+      <div>
+        <h2>Otro título de nivel 2, porque puedo poner varios. Elementos de formulario</h2>
+        <p>
+          Los elementos de formulario están contenidos dentro de un elemento form (si no no es un html W3C válido).
+          <div>
+            <span>Los labels solo se usan para acompañar a un elemento de formulario, nunca para sustituir a los
+              span.</span>
+            <label for="name">Nombre</label>
+            <input id="name" value="name" />
+          </div>
+        </p>
+      </div>
+
+      <div>
+        <h2>Último título de nivel 2 - Otros elementos</h2>
+        <a href="#" title="Enlace que no va a ningún sitio">Un enlace, como no quiero que enlace le pongo de dirección
+          un #, es una buena practica y una convención muy usada.</a>
+        <p> En los A hay que ponerles title, con una explicación de a donde nos redirige, hace la navegación más
+          accesible.</p>
+        <img src="assets/img/cge.jpg" alt="descrpción gráfica de dunweb" />
+        <p>Es obligatorio poner el atributo alt a las imagenes ya que es accesible. Si una persona invidente utiliza
+          nuestra aplicación podrá usar los alts.</p>
+      </div>
+
+      <section>Sección de comentarios, se puede repetir en varias páginas, ya que tiene sentido de forma transversal.
+      </section>
+    </article>
+
+    <footer>
+      Pie de página
+    </footer>
+    <script>
+      console.log('antes de cerrar meteremos los JS para que los cargue al final de la carga de la página y el usuario no se quede con uan página en blanco mientras.');
+    </script>
+  </body>
+
+</html>

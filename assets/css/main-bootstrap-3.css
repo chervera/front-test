@@ -1,0 +1,13 @@
+.principal{
+  background: red; 
+  font-size: 50px; 
+  
+  text-align: center;
+}
+
+.container > .row > div{
+  background: #fff;
+  border: 3px solid gray;
+  color: red;
+}
+
