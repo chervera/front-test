@@ -5,15 +5,31 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500|Roboto+Condensed:400,400i|Roboto:400,700"
       rel="stylesheet" />
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css" />
+    <style>
+      div.content {
+        background: red !important;
+        color: #333;
+        position: relative;
+      }
+
+      #molt.guai {
+        background: green;
+        position: absolute;
+      }
+    </style>
   </head>
 
   <body>
+    header::after{}
     <header>
+      div
       Cabecera Título de la aplicación. Será compartida por casi toda la apliación.
+      div
     </header>
     <article>
       <h1>Este es el título principal de la página, solo puede haver uno ya que es un H1</h1>
-      <div>
+      <div id="molt" class="content guai">
+        <h1></h1>
         <h2>Titulo de nivel 2, puede haver varios, uno por sección de contenido. Elementos de texto</h2>
         <p>
           En este párrafo, se explica el contenido del tag article, que no se repetirá en mas sitios de la aplicación.
@@ -27,6 +43,7 @@
           Para destacarlos a nivell de contenido usaremos los <strong>strong</strong>. A google lo molan.
         </p>
       </div>
+
 
       <div>
         <h2>Otro título de nivel 2, porque puedo poner varios. Elementos de formulario</h2>
@@ -53,6 +70,15 @@
       </div>
 
       <section>Sección de comentarios, se puede repetir en varias páginas, ya que tiene sentido de forma transversal.
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+
+            </div>
+          </div>
+        </div>
       </section>
     </article>
 
